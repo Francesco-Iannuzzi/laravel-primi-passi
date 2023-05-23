@@ -29,7 +29,7 @@ Route::get('/about', function () {
 
 
 Route::get('/contact', function () {
-    $data_contact = [
+    $data = [
         'page_title' => 'Contact',
         'contacts' => [
             'Mario Rossi: 1234567890',
@@ -41,5 +41,5 @@ Route::get('/contact', function () {
             'Lucia Grigio: 78956723410'
         ]
     ];
-    return view('contact', $data_contact);
+    return view('contact', $data);
 })->name('contact');
